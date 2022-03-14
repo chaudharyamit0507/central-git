@@ -1,0 +1,15 @@
+--- # http server
+
+- hosts: servers
+
+  user: amit
+
+  become: yes
+
+  connection: ssh
+
+  tasks:
+
+         - name: Install httpd on ubuntu
+
+           command: apt-get -y install apache2
